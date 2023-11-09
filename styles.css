@@ -36,9 +36,8 @@ body {
     transition: color 0.3s;
     color: #333;
     margin-top: 25px;
+    text-align: center;
   }
-  
-
   
   .description {
     max-height: 0;
@@ -55,18 +54,35 @@ body {
     transition: max-height 0.5s ease-in-out, padding 0.5s;
   }
 
-.toggle{
-    font-size: 64px;
-    font-weight: lighter;
-}
+  .toggle{
+      font-size: 64px;
+      font-weight: lighter;
+  }
 
-
-@media (max-width: 768px) {
+@media only screen and (max-width: 480px) {
   body {
     background-image: url('./bg-mobile.jpg'); 
     background-size: cover;
     background-position: center;
     backdrop-filter: blur(5px); 
+  }
+
+  .container {
+    max-width: 75%;
+  }
+
+  .toggle{
+    font-size: 48px;
+    font-weight: lighter;
+  }
+
+  .description {
+    font-size: large;
+    color: #3a3a3a;
+    text-align: center;
+  }
+  .title{
+    text-align: right;
   }
 }
 
