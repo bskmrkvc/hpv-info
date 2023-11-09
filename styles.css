@@ -69,6 +69,7 @@ body {
 
   .container {
     max-width: 75%;
+    max-height: 90%;
   }
 
   .toggle{
@@ -83,6 +84,10 @@ body {
   }
   .title{
     text-align: right;
+    font-size: small;
+  }
+  .section{
+    margin-bottom: 5px;
   }
 }
 
