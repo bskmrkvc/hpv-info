@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('./bg.jpg'); 
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(5px); 
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.5); 
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .section {
+    margin-bottom: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1); 
+    border-radius: 5px;
+    padding: 10px;
+    transition: border-color 0.3s, background-color 0.3s;
+  }
+  
+  .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: color 0.3s;
+    color: #333;
+    margin-top: 25px;
+  }
+  
+
+  
+  .description {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out, padding 0.5s;
+    margin-top: 10px;
+    color: #555;
+    font-size: x-large;
+  }
+  
+  .open {
+    max-height: 200px; 
+    padding: 10px;
+    transition: max-height 0.5s ease-in-out, padding 0.5s;
+  }
+
+.toggle{
+    font-size: 64px;
+    font-weight: lighter;
+}
+
+
+@media (max-width: 768px) {
+  body {
+    background-image: url('./bg-mobile.jpg'); 
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(5px); 
+  }
+}
+
